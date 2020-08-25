@@ -1,9 +1,19 @@
 //vars
 var initType;
-var expense= {type:"",amount:0.0,desc:"" };
-var day = new Array(12);
-
-
+var expense= {type:"", amount:0.0, desc:"", month:"", week:"", day:""};
+var month =new Array(12);
+var week = new Array();
+var day =[0,0,0,0,0,0,0,0,0,0,0,0];
+ for(let i =0;i<4;i++){
+    week[i] = day;
+ }
+ console.log("week");
+ console.log(week);
+ for(let i =0;i<12;i++){
+    month[i] = week;
+ }
+ console.log('month');
+ console.log(month);
 //frontend
 function seeDiv(id){
     document.getElementById(id).className = "see inputs"; /*2 classes*/
@@ -36,10 +46,22 @@ function setInitType(val){
     console.log(initType);
 }
 //when user clicks submit amount and description will go into the object
-function setObject(){
+function setObject(){//called by submit button
     expense.type =initType;
     expense.amount = JSON.parse(document.getElementById("amount-input").value);
     expense.desc = document.getElementById("desc-input").value;
+    let d = new Date();
+    let month = JSON.stringify(d.getMonth()+1);
+    let date = JSON.stringify(d.getDate());
+    let year = JSON.stringify(d.getFullYear());
+    expense.month = JSON.parse(month)-1;
+    // expense.week =
+    // intDate = JSON.parse(date);
+    // if(intdate >0 && intdate<7)
+    //     expense.week =0;
+    // else if(intdate >=8 && intdate<=15)
+    expense.day = month+"/"+date+"/"+year;
     noSeeDiv('input-div');
     console.log(expense);
+
 }
