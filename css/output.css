@@ -1,0 +1,49 @@
+#output-container{
+    width: 100%;
+    height:650px;
+    /* background:grey; */
+    display:grid;
+    place-items: center;
+}
+#output-div{
+    padding: 2%;
+    margin-top: 2%;
+    width: 70%;
+    height:90%;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    column-gap: 1%;
+    /* background:grey; */
+    border: 2px solid black;
+    overflow: hidden;
+}
+#output-div >div{
+    /* background: gray; */
+    /* alternate backgrounds */
+    overflow: scroll;
+    display: inherit;
+    row-gap: 1%;
+    grid-auto-rows: 200px;
+}
+.output{
+    background:grey;
+}
+.food{
+    background:rgb(147, 233, 76);
+}
+.bills{
+    background:blue;
+}
+.enter{
+    background: orange;
+}
+.gas-trans{
+    background: green;
+}
+.tuition{
+    background:purple;
+}
+..other{
+    background:pink;
+}
+
