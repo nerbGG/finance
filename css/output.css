@@ -31,6 +31,9 @@
 .food{
     background:rgb(147, 233, 76);
 }
+.clothing{
+    background:pink;
+}
 .bills{
     background:blue;
 }
@@ -42,8 +45,8 @@
 }
 .tuition{
     background:purple;
-}
-..other{
+/* }
+.other{
     background:pink;
-}
+} */
 
