@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Finances</title>
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="css/header.css" type="text/css">
+    <link rel="stylesheet" href="css/body.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/input.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <h3 class="logo">NERB</h3>
+        <a class="link" href=""> <strong>Home</strong></a>
+        <a class="link"href="expenses.html">Expenses</a>
+        <a class="link"href="">Budgeting</a>
+        <a class="link" href="">Login</a>
+    </div>
+    <div id="main">
+        <div id="text">
+            <p >Tracking Expenses,</p>
+            <p id="text-bottom">Made Simpler</p>
+        </div>
+       <button id="exp-btn" onclick="seeDiv('expense-type-div')">&#10011</button> 
+    </div>
+    <div id="expense-type-div" class="no-see inputs">
+        <button onclick="noSeeDiv('expense-type-div')">&#10005;</button>
+        <h4>Select the type of  the Expense:</h4>
+        <div id="button-div">
+            <button id ="Bills"class="exp-btns" onclick="setInitType(id)">Bills</button>
+            <button id ="Tuition" class="exp-btns" onclick="setInitType(id)">Tuition</button>
+            <button id ="Gas_Trans"class="exp-btns" onclick="setInitType(id)">Gas/Trans</button>
+            <button id ="Clothing"class="exp-btns" onclick="setInitType(id)">Clothing</button>
+            <button id ="Food"class="exp-btns" onclick="setInitType(id)">Food</button>
+            <button id ="Entertainment"class="exp-btns" onclick="setInitType(id)"> Entertainment</button>
+            <button id ="Other" class="exp-btns" onclick="setInitType(id)">Other</button>
+        </div>
+    </div>
+    <div id="input-div" class= "no-see inputs">
+        <span> Enter Amount </span><input type="number" name="amount" id="amount-input">    
+        <span>Short Description </span><input type="text" name="descrip." id="desc-input">
+        <button type="cancel" onclick="noSeeDiv('input-div')">Cancel</button>
+        <button type="submit" onclick="setObject()">Submit</button>
+    </div>
+    <footer>
+        <p>Copyright &#169; 2020 - <logo class="logo">NERB</logo> All Rights Reserved</p>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/expenses.js"></script>
+</body>
+</html>
