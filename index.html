@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy Finances</title>
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Amatic SC">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="css/header.css" type="text/css">
     <link rel="stylesheet" href="css/body.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -12,10 +12,10 @@
 </head>
 <body>
     <div class="header">
-        <h3 id="logo">NERB</h3>
-        <a class="link" href="">Home</a>
+        <h3 class="logo">NERB</h3>
+        <a class="link" href=""> <strong>Home</strong></a>
         <a class="link"href="expenses.html">Expenses</a>
-        <a class="link"href="">About</a>
+        <a class="link"href="">Budgeting</a>
         <a class="link" href="">Login</a>
     </div>
     <div id="main">
@@ -31,7 +31,7 @@
         <div id="button-div">
             <button id ="Bills"class="exp-btns" onclick="setInitType(id)">Bills</button>
             <button id ="Tuition" class="exp-btns" onclick="setInitType(id)">Tuition</button>
-            <button id ="Gas/Trans"class="exp-btns" onclick="setInitType(id)">Gas/Trans</button>
+            <button id ="Gas_Trans"class="exp-btns" onclick="setInitType(id)">Gas/Trans</button>
             <button id ="Clothing"class="exp-btns" onclick="setInitType(id)">Clothing</button>
             <button id ="Food"class="exp-btns" onclick="setInitType(id)">Food</button>
             <button id ="Entertainment"class="exp-btns" onclick="setInitType(id)"> Entertainment</button>
@@ -45,8 +45,9 @@
         <button type="submit" onclick="setObject()">Submit</button>
     </div>
     <footer>
-        <p>Copyright &#169; 2020 - NERB</p>
+        <p>Copyright &#169; 2020 - <logo class="logo">NERB</logo> All Rights Reserved</p>
     </footer>
     <script src="js/index.js"></script>
+    <script src="js/expenses.js"></script>
 </body>
 </html>

@@ -1,15 +1,27 @@
+
 #output-container{
     width: 100%;
-    height:650px;
+    height:720px;
     /* background:grey; */
     display:grid;
     place-items: center;
+    overflow: hidden;
+}
+#output-container>h3{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.content{
+    width: 100%;
+    display: inline-flex;
+    /* border: 2px solid red; */
+    justify-content: space-evenly;
+    align-items: center;
 }
 #output-div{
     padding: 2%;
-    margin-top: 2%;
     width: 70%;
-    height:90%;
+    height:650px;
     display:grid;
     grid-template-columns:repeat(4,1fr);
     column-gap: 1%;
@@ -24,28 +36,37 @@
     display: inherit;
     row-gap: 1%;
     grid-auto-rows: 200px;
+    /* border: 2px solid black; */
 }
+
 .output{
-    background:grey;
+    display: inherit;
+    background:white;
+    border:2px solid black;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
 }
+/*
 .food{
-    background:rgb(147, 233, 76);
+    background:white;
 }
 .clothing{
-    background:pink;
+    background:white;
 }
 .bills{
-    background:blue;
+    background:white;
 }
 .enter{
-    background: orange;
+    background: white;
 }
 .gas-trans{
-    background: green;
+    background: white;
 }
 .tuition{
-    background:purple;
-/* }
+    background:white;
+ }
+ 
 .other{
     background:pink;
 } */

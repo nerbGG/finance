@@ -1,27 +1,34 @@
-html{
-    background:black;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
+/* html{
+    background:black;
+} */
 body{
-    width:70%;
+    width:75%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     box-sizing: border-box;
-    /* font-family: 'Amatic SC', serif; */
-    /* letter-spacing: 2px; */
+    font-family: 'Oswald', serif;
+    letter-spacing: 2px;
     padding: 0%;
     background: white;
     border:2px solid white;
     text-shadow: 4px 4px 4px gray;
 }
 a{
+    font-size: 13px;
     text-decoration: none;
-    text-shadow: none;
-    color:black;
+    text-shadow: 2px 2px 2px gray;
+    /* color:black; */
 }
 a:hover{
     text-shadow: 4px 4px 4px gray;
+    font-weight: bold;
 }
 a,button{
     cursor: pointer;
@@ -31,6 +38,8 @@ footer{
     color:white;
     width: 100%;
     text-align: center;
+    height: 50px;
+    margin-top:30px;
 }
     
 
