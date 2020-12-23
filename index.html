@@ -28,15 +28,12 @@
     <div id="expense-type-div" class="no-see inputs">
         <button onclick="noSeeDiv('expense-type-div')">&#10005;</button>
         <h4>Select the type of  the Expense:</h4>
+        
         <div id="button-div">
-            <button id ="Bills"class="exp-btns" onclick="setInitType(id)">Bills</button>
-            <button id ="Tuition" class="exp-btns" onclick="setInitType(id)">Tuition</button>
-            <button id ="Gas_Trans"class="exp-btns" onclick="setInitType(id)">Gas/Trans</button>
-            <button id ="Clothing"class="exp-btns" onclick="setInitType(id)">Clothing</button>
-            <button id ="Food"class="exp-btns" onclick="setInitType(id)">Food</button>
-            <button id ="Entertainment"class="exp-btns" onclick="setInitType(id)"> Entertainment</button>
-            <button id ="Other" class="exp-btns" onclick="setInitType(id)">Other</button>
+            
         </div>
+        <Button onclick="addExpenseType()">Add</Button>
+        <Button onclick="">remove</Button>
     </div>
     <div id="input-div" class= "no-see inputs">
         <span> Enter Amount </span><input type="number" name="amount" id="amount-input">    
