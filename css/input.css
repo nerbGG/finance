@@ -24,6 +24,10 @@
     width: 40px;
     height:40px;
 }
+#expense-type-div>h4{
+    margin-top: 2%;
+    margin-bottom:6%;
+}
 #button-div{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
