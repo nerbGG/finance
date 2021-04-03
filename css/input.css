@@ -8,7 +8,7 @@
     grid-template-rows:1fr 1fr 3fr ; 
     text-align: center;*/
     width: 40%;
-    height: 300px;
+    height: 400px;
     padding:2%;
     /* overflow: hidden; */
 }
@@ -18,12 +18,12 @@
     top:25%;
     border:2px solid black;
 }
-
 #expense-type-div>button{
     margin-left: 95%;
-    width: 40px;
-    height:40px;
+    width: 60px;
+    height:50px;
 }
+
 #expense-type-div>h4{
     margin-top: 2%;
     margin-bottom:6%;
@@ -36,6 +36,7 @@
     /* background: black; */
     width: 100%;
     height: 100%;
+    margin-bottom: 2%;
 }
 #input-div{
     z-index: 999;
